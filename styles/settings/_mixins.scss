@@ -1,0 +1,48 @@
+$primary-font: "Raleway";
+$secondary-font: "Roboto Flex";
+
+@mixin border($radius: 1px, $background: $white, $border: $border) {
+    border: 1px;
+    border-style: solid;
+    border-color: $foreground;
+    border-radius: $radius;
+    border-bottom-width: 2px;
+    background-color: $background;
+}
+
+@mixin badge($border-radius: 5px, $border-width: 1px) {
+    border: solid $border-width;
+    border-radius: $border-radius;
+    background-color: $white;
+}
+
+@mixin list {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@mixin flex($direction: column, $text: center) {
+    display: flex;
+    flex-direction: $direction;
+    text-align: $text;
+}
+
+@mixin button() {
+    width: 100px;
+    height: 50px;
+    font: 16px $secondary-font;
+    border-style: solid;
+    @include badge($border-radius: 5px, $border-width: 1px);
+    margin: 30px 10px;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(0.95);
+    }
+    @include phone {
+        width: 70px;
+        height: 40px;
+    }
+}

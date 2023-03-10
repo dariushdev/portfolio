@@ -1,0 +1,30 @@
+@import "/styles/settings/settings.scss";
+
+.flair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 15px;
+    @include phone {
+        .flair {
+            font-size: 10px;
+        }
+    }
+}
+
+%flairText {
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.flairTextPublished {
+    @extend %flairText;
+    background-color: lightgreen;
+}
+
+.flairTextUnpublished {
+    @extend %flairText;
+    background-color: lightcoral;
+}

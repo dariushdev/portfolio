@@ -1,0 +1,53 @@
+@import "../settings/_settings.scss";
+@import "/styles/components/Articles/ArticleWrapper.module.scss";
+
+.articleWrapper {
+    font: 100% $secondary-font;
+}
+.articleContent {
+    text-align: left;
+    font-family: $secondary-font;
+    h1 {
+        text-align: center;
+    }
+    picture,
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80vw;
+        height: auto;
+    }
+    button {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    figure {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .postinfo {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0px;
+    }
+}
+.articles {
+    margin-top: 15px;
+
+    button {
+        width: 100px;
+    }
+}
+.pagination {
+    margin: 40px;
+    a {
+        padding: 10px;
+        font-size: 15px;
+        color: black;
+        &:visited {
+            color: black;
+        }
+    }
+}

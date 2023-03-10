@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "@tinymce/tinymce-react": "^4.2.0",
+    "@vercel/analytics": "^0.1.10",
+    "babel-plugin-superjson-next": "^0.4.5",
+    "bcrypt": "^5.1.0",
+    "date-fns": "^2.29.3",
+    "html-react-parser": "^3.0.4",
+    "lodash": "^4.17.21",
+    "next": "^12.3.4",
+    "next-auth": "^4.12.2",
+    "nodemailer": "^6.8.0",
+    "npm": "^8.19.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-google-recaptcha": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@testing-library/react": "^13.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.3",
+    "prisma": "^4.3.1",
+    "sass": "^1.54.0"
+  }
+}

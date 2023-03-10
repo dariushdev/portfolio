@@ -1,0 +1,15 @@
+@import "/styles/settings/settings.scss";
+.login {
+    form {
+        @include flex();
+
+        input {
+            @include border();
+            margin: 10px;
+            height: 40px;
+            &[type="submit"] {
+                @include button();
+            }
+        }
+    }
+}

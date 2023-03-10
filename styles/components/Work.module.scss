@@ -1,0 +1,89 @@
+@import "/styles/settings/settings.scss";
+
+.project {
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    font: 100% $primary-font;
+    p {
+        &:nth-child(2) {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        &:nth-child(3) {
+            font-size: 16px;
+        }
+    }
+
+    img {
+        width: 100%;
+        filter: blur(2px) grayscale(1);
+        opacity: 0.4;
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.projectImage {
+    display: flex;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+    aspect-ratio: auto;
+}
+
+.projectText {
+    @include flex($text: justify);
+    font: 100% $secondary-font;
+    margin: 80px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.projectBadge {
+    @include badge();
+    padding: 5px;
+    margin: 0px 8px 0px 0px;
+    p {
+        font-size: 14px;
+    }
+}
+
+.projects {
+    @include flex($direction: row);
+}
+
+.projectBadges {
+    @include flex($direction: row);
+    margin: 10px 0;
+}
+
+.projectRow {
+    @include flex($direction: column);
+}
+
+.moreProjects {
+    @include flex($direction: column);
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    a {
+        font-size: 35px;
+        text-transform: capitalize;
+        text-decoration: underline;
+        &:hover {
+            text-transform: lowercase;
+        }
+    }
+}
+
+@include phone {
+    .projects {
+        flex-direction: column;
+    }
+}

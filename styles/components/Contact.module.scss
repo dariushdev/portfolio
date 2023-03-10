@@ -1,0 +1,36 @@
+@import "/styles/components/Contact/ContactInfo.module.scss";
+@import "/styles/settings/settings.scss";
+
+.contact {
+    font: 100% $secondary-font;
+    form {
+        @include flex;
+    }
+    input,
+    textarea {
+        @include border;
+        margin: 10px;
+        height: 40px;
+        &:focus {
+            transform: scale(1.02);
+        }
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+    textarea {
+        height: 100px;
+        resize: none;
+        font-family: Arial;
+    }
+    p {
+        margin: 10px;
+    }
+    ul {
+        @include list;
+    }
+    i {
+        font-size: 32px;
+        margin: 0 10px;
+    }
+}

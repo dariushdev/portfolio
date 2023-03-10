@@ -1,0 +1,40 @@
+@import "/styles/settings/settings.scss";
+
+.container {
+    @include flex;
+    margin: 15px auto;
+    max-width: 1024px;
+    flex-grow: 1;
+}
+
+.navigation {
+    ul {
+        @include list;
+    }
+
+    li {
+        margin: 0 20px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    a {
+        &:link {
+            text-decoration: none;
+            color: $foreground;
+        }
+        &:visited {
+            text-decoration: none;
+            color: $foreground;
+        }
+        &:hover {
+            color: $highlight;
+        }
+    }
+    @include phone {
+        li {
+            margin: 0 10px;
+        }
+    }
+}

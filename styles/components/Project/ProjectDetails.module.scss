@@ -1,0 +1,70 @@
+@import "/styles/settings/settings.scss";
+
+.projectDetails {
+    @include flex($direction: column);
+    justify-content: space-between;
+    font-size: 16px;
+    button {
+        @include button();
+    }
+    @include phone {
+        @include flex($direction: column);
+    }
+    @include tablet {
+        @include flex($direction: column);
+    }
+}
+
+.projectInfo {
+    margin: 30px 0;
+    flex-direction: row;
+    flex: 1;
+}
+
+.projectDescription {
+    margin: 10px 5px;
+    font: 18px $secondary-font;
+    text-align: center;
+    @include phone {
+        margin: 10px;
+    }
+}
+
+.projectImage {
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    span {
+        &:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+    }
+    @include phone {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.projectBadge {
+    @include badge();
+    padding: 5px;
+    margin: 0px 8px 0px 0px;
+    p {
+        font-size: 14px;
+    }
+}
+
+.projectBadges {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.projectButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+        margin: 5px;
+    }
+}

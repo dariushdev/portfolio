@@ -1,0 +1,50 @@
+@import "/styles/settings/settings.scss";
+@import "/styles/components/Articles/ArticleWrapper.module.scss";
+
+.main {
+    font: 100% $secondary-font;
+    h1 {
+        margin: 5px 0;
+    }
+    mark {
+        background-color: $highlight;
+        color: $background;
+    }
+}
+
+.skills {
+    ul {
+        @include list;
+        padding: 12px;
+    }
+    li {
+        margin: 30px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    i {
+        font-size: 80px;
+    }
+    @include phone {
+        ul {
+            justify-content: center;
+        }
+        li:last-of-type {
+            display: none;
+        }
+    }
+    @include tablet {
+        ul {
+            text-align: center;
+        }
+    }
+}
+
+.about {
+    padding: 40px;
+    font-size: 24px;
+    @include phone {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,88 @@
+@import "/styles/components/Admin/ArticleForm.scss";
+@import "/styles/settings/settings.scss";
+
+html,
+body {
+  color: $foreground;
+  font: 20px $primary-font;
+}
+
+textarea {
+  font-family: Arial;
+  padding-top: 10px;
+}
+
+textarea::-webkit-input-placeholder {
+  padding-top: 0px;
+}
+
+textarea::-moz-placeholder {
+  padding-top: 0px;
+}
+
+textarea::-ms-input-placeholder {
+  padding-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $foreground;
+}
+
+button {
+  @include button();
+}
+
+h1 {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.captcha {
+  display: flex;
+  place-content: center;
+}
+
+table {
+  background-color: $background;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  background-color: $foreground;
+  color: #fff;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:nth-child(even) {
+  background-color: $border;
+}
